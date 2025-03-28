@@ -101,6 +101,7 @@ h3{
     border: none;
     width: 100%;
     font-size: 1.4rem;
+    resize: none;
 }
 
 #user-input:focus{
@@ -126,7 +127,7 @@ h3{
 }
 
 #send-btn:hover {
-    background-color: rgb(129, 45, 14);
+    background-color: rgb(154, 53, 17);
 }
 
 @media (max-width: 535px) {

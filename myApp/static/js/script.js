@@ -1,16 +1,13 @@
 $(document).ready(function() {
-    // Toggle del chat
     $('#chat-toggle').click(function() {
         $('#chat-content').slideToggle('fast');
     });
 
-    // Autoajuste del textarea
     $('#user-input').on('input', function() {
         this.style.height = 'auto';
         this.style.height = (this.scrollHeight) + 'px';
     });
 
-    // Envío de mensajes
     $('#send-btn').click(sendMessage);
     $('#user-input').keypress(function(e) {
         if (e.which === 13 && !e.shiftKey) {

@@ -5,12 +5,14 @@
     <div class="chat__wrapper">
         <div class="chat__container">
             <h1>Yummies chatbot</h1>
-            <div class="chat">
-                <h5>Hola</h5>
+            <div class="chat" id="chat-messages">
+                <div class="message bot-message">
+                    <p>Hola, como estas, Soy Yummies, tu asistente virtual para ayudarte con todo lo que necesites en nuestra app de comida. ¡Estoy aquí para hacer tu experiencia Yummies lo más deliciosa y sencilla posible! ¿En qué puedo ayudarte hoy?</p>
+                </div>
             </div>
 
             <div class="input-container">
-                <textarea type="text" id="user-input" placeholder="Escribe tu mensaje..."></textarea>
+                <textarea type="text" id="user-input" placeholder="Escribe tu mensaje..." rows="1"></textarea>
                 <button id="send-btn">
                     <i class="fa-solid fa-arrow-up"></i>
                 </button>
@@ -49,13 +51,5 @@
 </section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-<script>
-    $(document).ready(function() {
-        $('#chat-toggle').click(function() {
-            $('#chat-content').slideToggle('fast');
-        });
-    });
-</script>
-
+<script src="../../../../js/script.js"></script>
 {% endblock %}

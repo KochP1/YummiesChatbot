@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 chat = Blueprint('chat', __name__, template_folder='templates', static_folder="static")
 
-# Configuración del modelo Gemini
+
 generation_config = {
     "temperature": 1,
     "top_p": 0.95,
